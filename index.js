@@ -15,6 +15,14 @@ app.get('/signup', (req,res)=>{
     res.send('signup page')
 })
 
+app.get('/profile',(req,res)=>{
+    res.send('profile page')
+})
+
+app.get('/logout',(req,res)=>{
+    res.send('logout page')
+})
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
